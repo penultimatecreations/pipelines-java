@@ -30,7 +30,7 @@ steps:
     
  
 
-      strategy:
+strategy:
   matrix:
     linux:
       imageName: "ubuntu-latest"
