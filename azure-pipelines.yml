@@ -8,13 +8,14 @@ trigger:
 
 strategy:
   matrix:
-        linux:
-          imageName: "ubuntu-latest"
-        windows:
-          imageName: "windows-latest"
-        mac:
-          imageName: "macOS-latest"
-        maxParallel:3
+    linux:
+       imageName: "ubuntu-latest"
+    windows:
+       imageName: "windows-latest"
+    mac:
+       imageName: "macOS-latest"
+  maxParallel:3
+  
 pool:
   vmImage: $(imageName)
 
